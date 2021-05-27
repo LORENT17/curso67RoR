@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorent Muñoz</title>
+</head>
+
+<body>
+    <h1>Mi Formulario de Registro</h1>
+
+    <form action="">
+
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido">
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <label for="nombre">Contraseña</label>
+        <input type="password" id="pass" name="pass">
+        <br>
+        <label for="nombre">Confirmar</label>
+        <input type="password" id="confi" name="confi">
+        <br>
+
+        <label for="bday">Cumpleaños</label>
+        <input type="date" name="bday" id="bday">
+        <br>
+
+        <label for="hom">Hombre:</label>
+        <input type="radio" name="genero" id="hom" value="1">
+
+        <label for="muj">Mujer:</label>
+        <input type="radio" name="genero" id="muj" value="2">
+
+        <label for="otro">Otro:</label>
+        <input type="radio" name="genero" id="otro" value="3">
+
+        <br>
+
+        <label for="detalle">Una breve descripción de ti:</label>
+        <br>
+        <textarea name="detalle" id="detalle" cols="5" rows="3"></textarea>
+
+        <p>
+            Lenguaje Favorito
+            <select name="select">
+            <option value="value1" selected>Javascript</option>
+            <option value="value2" >PHP</option>
+            <option value="value3">Phyton</option>
+            </select>
+        </p>
+
+        <input type="button" value="Enviar...">
+
+    </form>
+</body>
+
+</html>
