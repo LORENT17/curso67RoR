@@ -1,20 +1,21 @@
 * {
     margin: 0px;
     padding: 0px;
-    outline: 1px dotted red;
 }
 
 #wrapper {
     width: 970px;
     margin: 0px auto;
     padding-top: 20px;
-    background: linear-gradient(0.35deg, #F3F3F3 9.88%, rgba(208, 208, 208, 0) 15.57%, rgba(248, 248, 248, 0) 38.7%), linear-gradient(179.39deg, #F3F3F3 12.49%, #FFFFFF 20.72%);
+    background-image: linear-gradient(white, gray, white);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 #main_content {
     margin-top: 15px;
     padding-bottom: 20px;
-    background-color: rgb(82, 21, 58);
+    background-image: radial-gradient(#6f5964, #1c0b10);
 }
 
 h1 {
@@ -22,6 +23,8 @@ h1 {
     display: inline;
     margin-right: 390px;
     margin-left: 20px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 28px;
 }
 
 h2 {
@@ -41,7 +44,7 @@ h2 {
 }
 
 #about {
-    background: linear-gradient(0.35deg, #f0d9d9 9.88%, rgba(208, 208, 208, 0) 15.57%, rgba(248, 248, 248, 0) 38.7%), linear-gradient(179.39deg, #F3F3F3 12.49%, #FFFFFF 20.72%);
+    background-image: linear-gradient(to right, #ececec, #cfcfd1);
     width: 445px;
     height: 310px;
     margin-right: 20px;
@@ -51,11 +54,10 @@ h2 {
 }
 
 #about h2 {
-    background-color: #c4c4c4;
+    background-image: linear-gradient(#b3b3b6, #878693, #b3b3b6);
     color: white;
     display: block;
-    width: 426px;
-    padding: 10px;
+    padding: 10px 0px 10px 10px;
     font-weight: bold;
 }
 
@@ -72,7 +74,6 @@ h2 {
 }
 
 #subcontents {
-    background-color: greenyellow;
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
@@ -81,9 +82,9 @@ h2 {
 }
 
 .cards {
-    width: 287px;
-    height: 525px;
-    background-color: ivory;
+    width: 294px;
+    height: 550px;
+    background-image: linear-gradient(to right, #fdfdfd, #d2c3d0);
     display: inline-block;
 }
 
@@ -93,24 +94,23 @@ h2 {
 }
 
 .cards h3 {
-    background-color: #c4c4c4;
+    background-image: linear-gradient(#b3b3b6, #878693, #b3b3b6);
     color: #FFFFFF;
     display: block;
     padding: 10px;
 }
 
 .cards h4 {
-    background-color: #c4c4c4;
+    background-image: linear-gradient(#b3b3b6, #878693, #b3b3b6);
     color: white;
     display: block;
-    width: 266px;
     padding: 10px;
     margin-bottom: 8px;
 }
 
 .cards img {
-    width: 286px;
     height: 150px;
+    width: 294px;
     margin-bottom: 6px;
 }
 
@@ -118,17 +118,18 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 28px;
+    height: 100px;
 }
 
 #techs {
     vertical-align: top;
     display: inline-block;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 0px 0px 10px;
 }
 
 #techs img {
-    width: 38px;
-    height: 38px;
+    width: 43px;
+    height: 43px;
     display: inline-block;
     margin-right: 10px;
 }
@@ -145,7 +146,7 @@ h2 {
     border: 1px solid #000000;
     border-radius: 10px;
     padding: 5px;
-    box-shadow: 5px 4px 8px 8px rgba(0, 0, 0, 0.2)
+    box-shadow: 2px 2px 2px 2px rgba(71, 71, 71, 0.2)
 }
 
 #footer {
@@ -153,9 +154,16 @@ h2 {
     text-align: center;
 }
 
-#footer a {}
+#footer a {
+    font-style: italic;
+}
 
 #footer img {
-    width: 22px;
-    height: 22px;
+    width: 18px;
+    height: 18px;
+}
+
+#rs {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }

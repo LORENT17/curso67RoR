@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px dotted red;
+}
+
+#container {
+    width: 970px;
+    /*background-image: linear-gradient(#2b5b84, #3776ab);*/
+    margin: 0px auto;
+}
+
+img {
+    width: 320px;
+    height: 100px;
+    margin-right: 450px;
+}
+
+#header p {
+    display: inline;
+}
+
+#header input {
+    margin-left: 750px;
+}
+
+#nav {
+    background-color: darkblue;
+    height: 50px;
+}
+
+#nav ul li {
+    display: inline;
+}
