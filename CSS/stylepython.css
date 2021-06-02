@@ -1,7 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
-    /*outline: 1px dotted red;*/
+    outline: 1px dotted red;
 }
 
 #container {
@@ -11,17 +11,24 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+
+/*----------HEADER-----------------------------------------------------*/
+
 #header img {
     width: 320px;
     height: 100px;
     margin-left: 40px;
     margin-right: 362px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #header p {
     display: inline;
     color: white;
     font-size: 14px;
+    display: inline-block;
+    vertical-align: top;
 }
 
 .sp {
@@ -29,12 +36,46 @@
 }
 
 #header input {
-    margin-left: 690px;
+    height: 32px;
+    width: 160px;
+    margin-left: 40px;
+    border-style: inset;
+    border-color: rgb(226, 226, 226);
+}
+
+#boton input::placeholder {
+    text-align: center;
 }
 
 #header a {
     color: rgb(226, 189, 21);
 }
+
+#boton {
+    background: #444444;
+    width: 280px;
+    padding: 16px 0px 16px 0px;
+    border-radius: 10px;
+    box-shadow: 1px 2px rgba(2, 2, 2, 0.4);
+    display: inline-block;
+    vertical-align: top;
+}
+
+#boton a {
+    background: #265175;
+    text-align: center;
+    padding: 4px 10px 4px 10px;
+    border-radius: 5px;
+    margin-left: 6px;
+    border-color: rgb(226, 226, 226);
+    border-style: outset;
+    border-width: 2px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*----------MENU CENTRAL-----------------------------------------------------*/
 
 #nav {
     background-color: #3D79AB;
@@ -60,6 +101,9 @@
     margin-left: 20px;
     margin-right: 20px;
 }
+
+
+/*----------CONTENIDO LEFT-RIGHT-----------------------------------------------------*/
 
 #main_content {
     background-color: #265175;
@@ -114,6 +158,9 @@
     color: white;
 }
 
+
+/*----------LINEAS DIVISORIAS-----------------------------------------------------*/
+
 .hr1 {
     width: 380px;
     height: 3px;
@@ -132,7 +179,8 @@
     display: inline-block;
 }
 
-#secondary_content {}
+
+/*----------SECCION CARDS(CONTENIDO SECUNDARIO)----------------------------------------------------*/
 
 .cards1 {
     width: 300px;
@@ -140,6 +188,7 @@
     text-align: center;
     margin-left: 110px;
     margin-right: 140px;
+    vertical-align: top;
 }
 
 .cards2 {
@@ -170,6 +219,9 @@
     text-decoration: none;
     color: #4697dd;
 }
+
+
+/*----------FOOTER---------------------------------------------------------------*/
 
 #footer {
     text-align: center;
