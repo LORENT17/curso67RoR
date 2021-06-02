@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    outline: 1px dotted red;
 }
 
 #wrapper {
@@ -27,7 +28,7 @@ h1 {
     font-size: 28px;
 }
 
-h2 {
+#hh {
     width: 400px;
     display: inline;
 }
@@ -63,14 +64,17 @@ h2 {
 
 #about a {
     margin-left: 10px;
+    font-size: 16px;
 }
 
 #sp {
-    margin: 10px 10px 20px 10px;
+    font-size: 16px;
+    margin: 16px 10px 20px 10px;
 }
 
 #sp1 {
-    margin: 0px 10px 10px 10px;
+    margin: 0px 10px 20px 10px;
+    font-size: 16px;
 }
 
 #subcontents {
@@ -93,14 +97,14 @@ h2 {
     margin-left: 20px;
 }
 
-.cards h3 {
+.cards h2 {
     background-image: linear-gradient(#b3b3b6, #878693, #b3b3b6);
     color: #FFFFFF;
     display: block;
     padding: 10px;
 }
 
-.cards h4 {
+.cards h3 {
     background-image: linear-gradient(#b3b3b6, #878693, #b3b3b6);
     color: white;
     display: block;
@@ -119,6 +123,7 @@ h2 {
     padding-right: 10px;
     padding-bottom: 28px;
     height: 100px;
+    font-size: 16px;
 }
 
 #techs {
