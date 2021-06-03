@@ -1,12 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
-    /*outline: 1px dotted red;*/
 }
 
 #container {
     width: 970px;
-    /*background-image: linear-gradient(#2b5b84, #3776ab);*/
     margin: 0px auto;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -25,15 +23,19 @@
     margin-right: 300px;
 }
 
+#caj {
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
 #header p {
     display: inline;
     color: white;
     font-size: 14px;
     display: inline-block;
     vertical-align: top;
-    margin-top: 14px;
-    margin-left: 110px;
-    margin-bottom: 5px;
+    margin: 14px 0px 5px 110px;
 }
 
 .sp {
@@ -54,12 +56,6 @@
 
 #header a {
     color: rgb(226, 189, 21);
-}
-
-#caj {
-    display: inline-block;
-    vertical-align: top;
-    margin-bottom: 30px;
 }
 
 #boton {
@@ -89,14 +85,11 @@
 #nav {
     background-color: #3D79AB;
     border-radius: 6px;
-    /*border-bottom: rgb(61, 61, 61) 2px solid;*/
     box-shadow: 1px 2px rgba(2, 2, 2, 0.4);
-    /*box-shadow: 0px 3px 8px 0px rgba(2, 2, 2, 0.8);*/
     text-align: center;
     width: 810px;
     margin-left: 90px;
     padding: 10px;
-    /*Preguntar que pasa con el height*/
     font-size: 22px;
 }
 
@@ -123,7 +116,6 @@
     margin-top: 46px;
     text-align: center;
     display: inline-block;
-    /*Busca la logica*/
 }
 
 #right {
