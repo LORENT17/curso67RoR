@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 1px dotted rebeccapurple;
+}
+
+#wrapper {
+    width: 950px;
+    background-color: rgb(255, 255, 255);
+    margin: 0px auto;
+    padding: 16px;
+}
+
+#header {
+    min-height: 150px;
+    background-color: green;
+    margin-bottom: 16px;
+}
+
+#navigation {
+    min-height: 300px;
+    width: 200px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 18px;
+}
+
+#main_content {
+    min-height: 400px;
+    width: 700px;
+    padding: 14px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.subcontents {
+    min-height: 200px;
+    width: 221px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.num {
+    margin-left: 14px;
+    margin-right: 14px;
+}
+
+#advertisement {
+    min-height: 120px;
+    width: 700px;
+    background-color: purple;
+    margin-top: 20px;
+}
+
+
+/*-----------------------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) {}
+
+@media only screen and (max-width:1023px) and (min-width:481px) {
+    #navigation {
+        display: none;
+    }
+    #main_content {
+        width: 97%;
+    }
+    .subcontents {
+        width: 48%;
+    }
+    .num {
+        margin: 0px 0px 0px 32px;
+        vertical-align: top;
+    }
+    .num1 {
+        margin-bottom: 18px;
+    }
+    #advertisement {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    #header {
+        width: 100%;
+    }
+    #main_content {
+        width: 87.5%;
+        height: 400%;
+        padding: 60px;
+    }
+    #navigation {
+        display: none;
+    }
+    .subcontents {
+        width: 100%;
+    }
+    .num {
+        margin: 0px;
+    }
+    .num1,
+    .num {
+        margin-bottom: 20px;
+    }
+    #advertisement {
+        width: 100%;
+        margin-top: 60px;
+    }
+}

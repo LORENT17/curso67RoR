@@ -87,6 +87,9 @@
     .subcontents {
         width: 48%;
     }
+    .num {
+        display: none;
+    }
     #advertisement {
         width: 98%;
     }
