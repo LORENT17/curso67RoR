@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    margin: 0px auto;
+    background-color: rgb(209, 203, 203);
+    width: 950px;
+    padding: 16px;
+}
+
+#header {
+    background-color: rgb(0, 160, 0);
+    height: 120px;
+    margin-bottom: 16px;
+}
+
+#navigation {
+    background-color: blue;
+    width: 220px;
+    height: 300px;
+    display: inline-block;
+    margin-right: 16px;
+}
+
+#main_content {
+    background-color: red;
+    width: 680px;
+    height: 400px;
+    padding: 14px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.subcontents {
+    width: 210px;
+    height: 200px;
+    background-color: yellow;
+    display: inline-block;
+    margin-right: 14px;
+    margin-bottom: 20px;
+}
+
+#advertisement {
+    background-color: purple;
+    width: 681px;
+    /*No me obedece*/
+    height: 120px;
+    margin-right: 14px;
+}
+
+
+/*--------RESPONSIVE----------------------------------------------------------*/
+
+@media only screen and (max-width:480px) {
+    #header {
+        width: 100%;
+    }
+    #main_content {
+        width: 97%;
+        height: 400%;
+    }
+    #navigation {
+        display: none;
+    }
+    .subcontents {
+        width: 100%;
+        display: block;
+    }
+    #advertisement {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width:481px) {
+    #header {
+        width: 100%;
+    }
+    #main_content {
+        width: 97%;
+        height: 100%;
+    }
+    #navigation {
+        display: none;
+    }
+    .subcontents {
+        width: 48%;
+    }
+    #advertisement {
+        width: 98%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {}
+
+
+/*@media only screen and (max-width:480px) {
+    #navigation {
+        display: none;
+    }
+    #main_content {
+        width: 100%;
+    }
+    #subcontents {
+        width: 90%;
+    }
+    #advertisement {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:1023px) and (min-width:481px) {
+    #navigation {
+        display: none;
+    }
+    #main_content {
+        width: 99%;
+        height: auto;
+    }
+    #subcontents {
+        width: 60%;
+    }
+    #advertisement {
+        width: 95%
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    
+}*/
