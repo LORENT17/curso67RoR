@@ -15,7 +15,11 @@ console.log(resetNegativos([1, 2, -1, -3]));
 /*Dado un array, mueve todos los valores un espacio de derecha a izquierda eliminando 
 el primer valor y dejando un 0 para el último valor. Por ejemplo, moverAdelante([1,2,3]) debiera dar como resultado [2,3,0].*/
 
+function moverAdelante() {
+    for (var i = 0; i < array.length - 1; i++)
 
+}
+moverAdelante(([1, 2, 3]))
 
 /*Configura un array para que el resultado sean los valores en el orden contrario. 
 Por ejemplo, returnReverso([1,2,3]) debe dar [3,2,1].*/
@@ -24,8 +28,11 @@ Por ejemplo, returnReverso([1,2,3]) debe dar [3,2,1].*/
 function returnReverso(array) { //[1, 2, 3]
     var temp = 0;
     for (var i = 0; i < array.length / 2; i++) {
+        // temp = array[0] = 1
         temp = array[i];
+        // 1 = array[3-1-0]>2>3
         array[i] = array[array.length - 1 - i];
+        // 3 = 1
         array[array.length - 1 - i] = temp;
     }
     return array;
@@ -40,11 +47,9 @@ function repetirValores(array) { //array= [4,”Ulysses”, 42, false]
     var nuevoArray = [];
 
     for (var i = 0; i < array.length; i++) {
-
-        if (array[i] == array[i]) {
-            nuevoArray.push(4, 4);
-
-        }
-        return nuevoArray;
+        array[i] = array[i];
+        nuevoArray.push(array[i], array[i]);
     }
-    console.log(repetirValores([4, 32, 42, false]));
+    return nuevoArray;
+}
+repetirValores([4, "Ulysses", 42, false]);
