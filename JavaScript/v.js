@@ -15,9 +15,13 @@ console.log(resetNegativos([1, 2, -1, -3]));
 /*Dado un array, mueve todos los valores un espacio de derecha a izquierda eliminando 
 el primer valor y dejando un 0 para el último valor. Por ejemplo, moverAdelante([1,2,3]) debiera dar como resultado [2,3,0].*/
 
-function moverAdelante() {
-    for (var i = 0; i < array.length - 1; i++)
+function moverAdelante(array) { //array = [1, 2, 3]
 
+    for (var i = 0; i < array.length - 1; i++) {
+        array[i] = array[i + 1];
+    }
+    array[array.length - 1] = 0;
+    return array;
 }
 moverAdelante(([1, 2, 3]))
 
