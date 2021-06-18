@@ -1,29 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <title>Ninja Desapareciendo</title>
-
+    <title>CURSOR FUERA</title>
     <script>
-        $(document).ready(function() {
-            //adjunta un "click event listener" a todas las etiquetas img cuando el documento esté listo
-            $('img').click(function() {
-                $(this).hide();
+         $(document).ready(function() {
+             var temp = "";
+            $('img').hover(function(){
+                temp = $(this).attr("src");
+				$(this).attr("src", "imagen4.jpg");
+			},function(){
+                $(this).attr("src", temp);  
             });
-            $('#boton').click(function() {
-                $('img').show();
-            });
-            /*$('img').click(function() {
-                $('#image1').fadeIn();
-            });*/
-            /*$('img').click(function() {
-                $('#image2').fadeOut();
-            });*/
-
         });
     </script>
     <style>
@@ -66,18 +57,12 @@
         }
     </style>
 </head>
-
 <body>
     <div id="container">
         <img src="imagen.png" id="image1" />
-        <img src="imagen2.png" id="image2" />
-        <img src="imagen.png" id="" />
+        <img src="imagen1.png" id="image2" />
         <img src="imagen2.png" id="" />
-        <img src="imagen1.png" id="" />
-        <img src="imagen2.png" id="" />
-        <img src="imagen1.png" id="" />
-        <img src="imagen2.png" id="" />
-        <button id="boton">Restaurar</button>
+        <img src="imagen3.jpg" id="" />
     </div>
 </body>
 </html>

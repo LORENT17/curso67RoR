@@ -5,11 +5,100 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Funciones Jquery</title>
+    <script>
+            $(document).ready(function() {
+            
+            $('#botones').click(function() {
+                console.log("accion");
+                alert("A veces puede ser dificil, sin embargo mientras más practicas más entenderas la logica");
+            });
+            $('.b1').click(function() {
+                $(this).hide();
+            });
+            $('#boton').click(function() {
+                $('img').show();
+            });
+        });
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #container{
+            width: 1000px;
+            padding: 30px;
+            margin: 0px auto;
+        }
+        button{
+            
+            display: block;
+            text-decoration: none;
+            padding: 16px;
+            width: 100px;
+            font-weight: bold;
+            font-size: 16px;
+            color: white;
+            background-color: green;
+            border: 1px solid #c1f0bf;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        #botones{
+            display: inline-block;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            
+        }
+
+        hr{
+            border: 1px solid rgb(42, 131, 24);
+            border-radius: 2px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        #texto{
+            display: inline-block;
+            text-align: center;
+            margin-left: 30px;
+            
+        }
+    </style>
 </head>
 
 <body>
+ <div id="container">
+   <div id="botones">
+  <button>Click</button>
+  <button>Click</button>
+</div>
+   <div id="texto">
+  <h1>Funciones Jquery</h1>
+  <p>Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+</div>
+  <hr>
 
+  <div id="botones" class="b1">
+    <button>Hide</button>
+    <button>Hide</button>
+  </div>
+     <div id="texto">
+    <h1>Funciones Jquery</h1>
+    <p>Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+  </div>
+  <hr>
+  
+  
+
+ 
 </body>
 
 </html>
