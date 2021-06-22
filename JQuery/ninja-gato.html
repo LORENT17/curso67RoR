@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NinjaGato</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            function restaurarNinja() {
+                for (let i = 0; i <= 4; i++) {
+                    $('#container').append('<img  id="' + i + '" src=img/ninja' + i + '.png alt-src=img/cat' + i + '.png inicio="img/ninja' + i + '.png"><br>');
+                }
+
+                $('img').click(function() {
+                    var temp = $(this).attr('src');
+                    $(this).attr('src', $(this).attr('alt-src'));
+                    $(this).attr('alt-src', temp);
+                });
+            }
+            restaurarNinja();
+
+            $('#container').after('<button>Restaurar</button>');
+
+            $('button').click(function() {
+                $('#container').html("");
+                restaurarNinja();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="container">
+    </div>
+</body>
+
+</html>
