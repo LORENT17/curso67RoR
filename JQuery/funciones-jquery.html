@@ -8,34 +8,76 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Funciones Jquery</title>
     <script>
-            $(document).ready(function() {
-            
-            $('#botones').click(function() {
+        $(document).ready(function() {
+
+            $('#botones').click(function() { //hacer click y me muestre un msj
                 console.log("accion");
                 alert("A veces puede ser dificil, sin embargo mientras más practicas más entenderas la logica");
             });
             $('.b1').click(function() {
-                $(this).hide();
+                $(this).hide(); //esconde
             });
-            $('#boton').click(function() {
-                $('img').show();
+
+            $('.parraf').hide();
+            $('.b2').click(function() {
+                $('.parraf').show(); //muestra
+            });
+
+            $('.b3').click(function() {
+                $('.parrafo').toggle(); //oculta o muestra un elemento
+            });
+
+            $("#b4").click(function() {
+                $("img").slideDown(600); //desliza un elemento hacia abajo
+
+            });
+            $("#sup").click(function() {
+                $("img").slideUp(); //desliza un elemento hacia arriba
+
+            });
+            $("#stoggleb").click(function() {
+                $("#uno, #dos").slideToggle(); //
+
+            });
+
+            $("#fadeinin").click(function() {
+                $("#un, #do").fadeIn(); //
+
+            });
+
+            $("#fadeout").click(function() {
+                $("#un, #do").fadeOut(); //
+
+            });
+            $(".prueba").click(function() {
+                $(".prueba").removeClass("estilos"); // Eliminar la clase al dar cli
+                $(this).addClass("estilos"); // agregar clase en el evento
+            });
+
+            $(".coding").click(function() {
+                $(".coding").before("<h3> Necesitamos cursos de diseño grafico</h3>");
+
+            });
+
+            $(".cod").click(function() {
+                $(".cod").after("<h3> Hello World</h3>");
             });
         });
     </script>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-
-        #container{
+        
+        #container {
             width: 1000px;
             padding: 30px;
             margin: 0px auto;
         }
-        button{
-            
+        
+        button {
             display: block;
             text-decoration: none;
             padding: 16px;
@@ -48,57 +90,148 @@
             border-radius: 5px;
             display: inline-block;
         }
-
-        #botones{
+        
+        #botones {
             display: inline-block;
         }
-
+        
         h1 {
             margin-bottom: 20px;
-            
         }
-
-        hr{
+        
+        hr {
             border: 1px solid rgb(42, 131, 24);
             border-radius: 2px;
             margin-top: 30px;
             margin-bottom: 40px;
         }
-
-        #texto{
+        
+        #texto {
             display: inline-block;
             text-align: center;
             margin-left: 30px;
-            
+        }
+        
+        #uno,
+        #dos {
+            display: none;
+        }
+        
+        img {
+            display: none;
+            margin-left: 400px;
+        }
+        
+        .estilos {
+            background-color: rgb(231, 89, 45);
         }
     </style>
 </head>
 
 <body>
- <div id="container">
-   <div id="botones">
-  <button>Click</button>
-  <button>Click</button>
-</div>
-   <div id="texto">
-  <h1>Funciones Jquery</h1>
-  <p>Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
-</div>
-  <hr>
+    <div id="container">
 
-  <div id="botones" class="b1">
-    <button>Hide</button>
-    <button>Hide</button>
-  </div>
-     <div id="texto">
-    <h1>Funciones Jquery</h1>
-    <p>Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
-  </div>
-  <hr>
-  
-  
+        <!--1--------------------------------------------------------------------------------->
+        <div id="botones">
+            <button>Click</button>
 
- 
+        </div>
+        <div id="texto">
+            <h1>Funciones Jquery</h1>
+            <p>Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+        </div>
+        <hr>
+        <!--2--------------------------------------------------------------------------------->
+        <div id="botones" class="b1">
+            <button>Hide</button>
+
+        </div>
+        <div id="texto">
+            <h1>Funciones Jquery</h1>
+            <p>Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+        </div>
+        <hr>
+        <!--3--------------------------------------------------------------------------------->
+        <div id="botones" class="b2">
+            <button>Show</button>
+
+        </div>
+        <div id="texto">
+            <h1>Funciones Jquery</h1>
+            <p class="parraf">Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+        </div>
+        <hr>
+        <!--4--------------------------------------------------------------------------------->
+        <div id="botones" class="b3">
+
+            <button>Toggle</button>
+        </div>
+        <div id="texto">
+            <h1>Funciones Jquery</h1>
+            <p class="parrafo">Estamos aprendiendo funciones de Jquery , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+        </div>
+        <hr>
+        <!--5--------------------------------------------------------------------------------->
+        <div id="botones">
+            <button id="b4">SDown</button>
+            <button id="sup">Sup</button>
+        </div>
+        <img src="jat.png" alt="" width="400" height="200">
+
+        <hr>
+
+        <!--6--------------------------------------------------------------------------------->
+
+        <div id="botones">
+
+            <button id="stoggleb">SToggle</button>
+        </div>
+        <div id="texto">
+            <h1 id="uno">Funciones Jquery</h1>
+            <p id="dos" class="parrafo">Estamos aprendiendo funciones de Jquery slideToggle , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+        </div>
+        <hr>
+
+        <!--7------------------------FadeIn y out--------------------------------------------------------->
+
+        <div id="botones">
+
+            <button id="fadeinin">FadeIn</button>
+            <button id="fadeout">Fadeout</button>
+        </div>
+        <div id="texto">
+            <h1 id="un">Funciones Jquery</h1>
+            <p id="do" class="parrafo">Estamos aprendiendo funciones de Jquery slideToggle , nos ayudaran a crear eventos en nuestras páginas y aplicaciones web.</p>
+        </div>
+        <hr>
+
+        <!--7------------------------add y remove Class--------------------------------------------------------->
+
+        <div id="botones">
+            <button class="prueba">Coding</button>
+            <button class="prueba">JS</button>
+            <button class="prueba">Python</button>
+        </div>
+        <hr>
+
+        <!--8------------------------before--------------------------------------------------------->
+
+        <h1>Cursos en CondingDojo</h1>
+        <div class="coding">Javascript</div>
+        <div class="coding">Diseño de Experiencias de Usuario</div>
+        <div class="coding">Emprendimiento digital</div>
+        <hr>
+
+        <!--8------------------------after--------------------------------------------------------->
+
+        <h1>Cursos en CondingDojo</h1>
+        <div class="cod">Javascript</div>
+        <div class="cod">Diseño de Experiencias de Usuario</div>
+        <div class="cod">Emprendimiento digital</div>
+        <hr>
+
+
+
 </body>
 
 </html>
