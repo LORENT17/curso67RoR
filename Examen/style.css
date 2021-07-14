@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 1200px;
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #062134;
+    padding: 10px 18px 10px 18px;
+}
+
+
+/*-------------------------------------HEADER-----------------------------------------------------------------*/
+
+.header {
+    padding: 30px;
+}
+
+#home {
+    color: #4da4da;
+    opacity: .7;
+}
+
+span {
+    color: #1b98e6;
+}
+
+.header h1 {
+    color: #fff;
+    display: inline-block;
+    margin-right: 84px;
+    font-size: 36px;
+}
+
+.header a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-left: 76px;
+}
+
+
+/*-------------------------------------MAIN----------------------------------------------------------------*/
+
+.main {
+    background-color: #fff;
+    padding: 24px;
+}
+
+
+/*-------------------------------------MAIN CARDS----------------------------------------------------------------*/
+
+.cards {
+    margin-top: 26px;
+    background-color: #1468a8;
+    width: 319px;
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    padding: 22px;
+}
+
+.cardsp {
+    margin-left: 26px;
+    margin-right: 26px;
+}
+
+.cards h1 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 6px;
+    margin-top: 10px;
+    font-size: 26px;
+}
+
+.cards p {
+    margin-top: 10px;
+}
+
+.cards button {
+    margin-top: 42px;
+    display: block;
+    text-decoration: none;
+    padding: 16px 46px 16px 46px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(180deg, #4FB0ED 0%, #198FD9 100%);
+    border-radius: 5px;
+    border: none;
+}
+
+
+/*-------------------------------------INF Y TESTIMONIO----------------------------------------------------------------*/
+
+.inf {
+    margin-top: 36px;
+}
+
+#inf2 {
+    display: inline-block;
+}
+
+#building {
+    width: 360px;
+    margin-top: 16px;
+    margin-right: 26px;
+    height: 200px;
+    display: inline-block;
+}
+
+.parrafos {
+    display: inline-block;
+    width: 366px;
+    vertical-align: top;
+    margin-top: 16px;
+    margin-right: 26px;
+}
+
+.parrafos p {
+    margin-bottom: 14px;
+    color: #1d3546;
+    font-size: 14px;
+}
+
+#par {
+    margin-top: 28px;
+}
+
+.parrafos a {
+    text-decoration: none;
+    color: #1468a8;
+}
+
+#lms {
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+
+/*-----TESTIMONIO-------------*/
+
+.testimonios {
+    display: inline-block;
+    width: 365px;
+    vertical-align: top;
+}
+
+#mensaje {
+    font-style: italic;
+    background-color: #daedff;
+    padding: 26px 26px 60px 26px;
+    margin-top: 16px;
+    font-size: 20px;
+    color: #1d3546;
+}
+
+#user {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 34px;
+    color: #1d3546;
+    font-size: 14px;
+}
+
+h2 {
+    color: #1d3546;
+}
+
+
+/*-------------------------------------FOOTER----------------------------------------------------------------*/
+
+.containerfooter {
+    background-color: #daedff;
+    margin-top: 1px;
+    padding: 26px 26px 30px 26px;
+    text-align: center;
+}
+
+.containerfooter a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #062134;
+}

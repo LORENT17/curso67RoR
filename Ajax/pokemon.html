@@ -5,99 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pokedex::</title>
+    <title>Funciones JQuery</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script>
         $(document).ready(function() {
-            //carga dinamica de las imagenes
             for (let i = 1; i <= 898; i++) {
-                $('#container').append('<img id="' + i + '" src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">');
+                $('#container').append('<img src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + i + '.png">');
             }
-
-            //capturar el click en alguna imagen
-            $('img').click(function() {
-                var id = $(this).attr('id'); //obtenemos el valor del id de la imagen
-
-                $.get("https://pokeapi.co/api/v2/pokemon/" + id + "/", function(respuesta) { //Obtiene la informacion de la API DE POKEMONES y la guarda en una variable respuesta. 
-                    //dir() es la manera de ver todas las propiedades de un objeto JavaScript específicado por consola, mediante la cual el desarrollador puede facilmente obtener las propiedades del objeto. 
-
-                    console.dir(respuesta); //podemos ver las propiedades del objeto. 
-
-                    $('#datospok').html('');
-                    $('#datospok').append('<p class="h1 text-body">' + respuesta.name + '</p>');
-                    $('#datospok').append('<img class="imagen" src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/' + id + '.png">');
-                    $('#datospok').append('<p class="text-body">N° Identidad&nbsp;:&nbsp;' + respuesta.id + '</p>');
-                    $('#datospok').append('<p>Types&nbsp;:&nbsp;' + respuesta.types[0].type.name + '</p>');
-                    $('#datospok').append('<p>height&nbsp;:&nbsp;' + respuesta.height + '</p>');
-                    $('#datospok').append('<p>weight&nbsp;:&nbsp;' + respuesta.weight + '</p>');
-                }, "json");
-            });
         });
     </script>
-
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            /*outline: 1px dotted red;*/
-        }
-        
-        #general {
-            width: 1360px;
-        }
-        
-        #container {
-            background-color: white;
-            padding-left: 90px;
-            padding-top: 22px;
-        }
-        
-        #dts {
-            background-color: white;
-            height: 400px;
-            margin-top: 22px;
-            margin-right: 20px;
-            text-align: center;
-            padding: 26px;
-            box-shadow: 0 1.1rem 2rem rgb(222, 225, 240);
-            border-radius: 0.8rem;
-            position: sticky;
-            top: 22px;
-        }
-        
-        .h1 {
-            font-size: 22px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: bold;
-            color: rgb(255, 253, 244);
-        }
-        
-        p {
-            text-transform: capitalize;
-            font-weight: bold;
-            color: rgb(173, 173, 173);
-            margin-top: 18px;
-        }
-        
-        img {
-            border: 0.08rem solid rgb(238, 238, 238);
-        }
-        
-        .imagen {
-            border: 0px;
-        }
-    </style>
 </head>
 
 <body>
-    <div id="general" class="row">
-        <div id="container" class="col-9"></div>
-
-        <div id="dts" class="col">
-            <div id="datospok"></div>
-        </div>
-
+    <div id="container">
+        <!-- <img src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png">
+        <img src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png">
+        <img src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png">
+        <img src="http://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png">-->
     </div>
 </body>
 

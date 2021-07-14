@@ -66,6 +66,32 @@
 
                 $(".cod").after("<h3> Hello World</h3>");
             });
+
+            $("#cc").click(function() {
+                $("#app").append("<p>Hello</p>");
+            });
+
+            $("#htmlbt").click(function() {
+                $("#ed").html("<strong>Hello</strong>");
+            });
+
+            $("#btt").click(function() {
+                $(this).addClass("estilos");
+                $("#estatica").attr({
+                    width: "600",
+                    height: "400"
+                });
+
+            });
+
+            $("#bt1").click(function() {
+                alert($("#petsname").val());
+            });
+
+            $("#bt2").click(function() {
+                $("#tx1").text("Sigue adelante, practicar hasta morir xD");
+                $("#tx2").text("VAMOS VAMOS VAMOS");
+            });
         });
     </script>
 
@@ -128,6 +154,17 @@
         
         .estilos {
             background-color: rgb(231, 89, 45);
+        }
+        
+        #estatica {
+            display: inline;
+        }
+        
+        input {
+            width: 200px;
+            padding: 16px;
+            border-radius: 5px;
+            border: 1px solid green;
         }
     </style>
 </head>
@@ -220,22 +257,57 @@
 
         <!--8------------------------before--------------------------------------------------------->
 
-        <h1>Cursos en CondingDojo</h1>
+        <h1>Cursos en CondingDojo-Funciones JQuery</h1>
         <div class="coding">Javascript</div>
         <div class="coding">Diseño de Experiencias de Usuario</div>
         <div class="coding">Emprendimiento digital</div>
         <hr>
 
-        <!--8------------------------after--------------------------------------------------------->
+        <!--9------------------------after--------------------------------------------------------->
 
-        <h1>Cursos en CondingDojo</h1>
+        <h1>Cursos en CondingDojo-Funciones JQuery</h1>
         <div class="cod">Javascript</div>
         <div class="cod">Diseño de Experiencias de Usuario</div>
         <div class="cod">Emprendimiento digital</div>
         <hr>
 
+        <!--10------------------------.append--------------------------------------------------------->
+
+        <div id="app">
+            <h1 id="cc">Cursos en CondingDojo</h1>
+            <p>Javascript</p>
+            <p>Diseño de Experiencias de Usuario</p>
+            <p>Emprendimiento digital</p>
+        </div>
+        <hr>
+        <div id="resultado"></div>
+
+        <!--11------------------------HTML--------------------------------------------------------->
+
+        <h1>Cursos en CondingDojo-Funciones JQuery</h1>
+        <button id="htmlbt">Html</button>
+        <p id="ed">Emprendimiento digital</p>
+        <hr>
+
+        <!--12------------------------ATTR--------------------------------------------------------->
 
 
+        <button id="btt">Html</button>
+        <img id="estatica" src="jat.png" alt="" width="400" height="200">
+        <hr>
+
+        <!--12------------------------Value--------------------------------------------------------->
+
+        <input type="text" name="petname" placeholder="Ingresa el nombre de tu mascota" id="petsname">
+        <button id="bt1">Value</button>
+        <hr>
+
+        <!--12------------------------text--------------------------------------------------------->
+
+        <button id="bt2">Text</button>
+        <p id="tx1">Quiero aprender Jquery</p>
+        <p id="tx2">Necesito aprender bien</p>
+        <hr>
 </body>
 
 </html>
